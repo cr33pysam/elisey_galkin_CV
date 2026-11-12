@@ -1,6 +1,6 @@
 # ============================================================
-# GitHub Actions workflow — автоматическая сборка через GH Pages
-# Размещаем здесь, чтобы Jekyll подхватил конфигурацию
+# GitHub Actions workflow — автоматическая сборка и деплой на GitHub Pages
+# Запускается при пуше в main / master / gh-pages
 # ============================================================
 
 name: GitHub Pages Build
@@ -8,39 +8,49 @@ name: GitHub Pages Build
 on:
   push:
     branches: [main, master, gh-pages]
-  workflow_dispatch:
+  workflow_dispatch:   # ручной запуск из вкладки Actions
 
+# Разрешения для GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Отменяем старые незавершённые деплои одной ветки
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
   build:
+    name: Build Jekyll site
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true
-          cache-version: 0
-      - run: bundle exec jekyll build --destination _site
-      - uses: actions/upload-pages-artifact@v3
+          ruby-version: '3.3.4'   # соответствует .ruby-version
+          bundler-cache: true      # кеширует bundle install (Gemsfile.lock)
+
+      - name: Build with Jekyll
+        run: bundle exec jekyll build --destination _site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
   deploy:
+    name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
+      name: github-pages       # окружение требует подтверждения (опционально)
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - id: deployment
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4   # правильный экшен для деплоя
