@@ -1,12 +1,73 @@
-# Site settings
-title: CV | Иванов Иван
-description: Сайт-визитка — Frontend-разработчик
-baseurl: "/elisey_galkin_CV"
-url: ""
+# ============================================================
+# Jekyll-конфигурация для сайта-визитки
+# Все настройки для GitHub Pages (static only, no plugins)
+# ============================================================
 
-# Build settings
+title: "Алексей Галкин"
+description: "Портфолио — разработчик, дизайнер, исследователь"
+baseurl: ""          # пустой, если корень домена (user.github.io)
+url: "https://alekseygalkin.github.io"   # измените на ваш домен/репозиторий
+lang: "ru"
+
+# Автор / владелец сайта
+author:
+  name: "Алексей Галкин"
+  email: "alexey@galkin.dev"
+  twitter: "galkin_dev"
+  github: "galkin-dev"
+
+# Соцсети (ссылки для футера)
+social:
+  github: "https://github.com/galkin-dev"
+  telegram: "https://t.me/galkin_dev"
+  linkedin: "https://linkedin.com/in/galkin-dev"
+  twitter: "https://twitter.com/galkin_dev"
+
+# Акцентный цвет — приглушённый терракотовый (#C0564A).
+# Для синего замените на #2563EB.
+accent_color: "#C0564A"
+
+# Логотип (текстовый или SVG в asset)
+logo_text: "AG"
+
+# Ключевые слова для SEO
+keywords: "портфолио, разработка, дизайн, кейсы"
+
+# Время публикации (timezone)
+timezone: Europe/Moscow
+
+# ---- COLLECTIONS: кейсы -----------------------------------
+collections:
+  cases:
+    output: true
+    permalink: /cases/:path/
+
+# ---- Плагин: sitemap (через жёсткий список, т.к. gh-pages
+#       не всегда поддерживает все плагины — используем
+#       ручной генератор через liquid) ------------------------
+plugins: []
+
+# Компрессия и оптимизация
 markdown: kramdown
-highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: false   # без внешних зависимостей
 
-# Google Fonts (подключается в head)
-google_font: "Inter:wght@400;500;600;700"
+sass:
+  style: compressed          # minify CSS
+
+# ---------- Экспорт -----------------------------------------
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .git
+  - .github
+  - node_modules
+
+keep_files:
+  - .git
+  - .github
+
+encoding: utf-8
+line_endings: unix

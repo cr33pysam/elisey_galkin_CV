@@ -1,0 +1,133 @@
+---
+# ============================================================
+# Layout для страницы резюме
+# Автоматически добавляет ID к заголовкам h2 для навигации
+# ============================================================
+layout: default
+---
+
+<div class="wrapper wrapper--two-col">
+  <!-- Боковая панель: оглавление -->
+  <aside class="toc-sidebar">
+    <h2 class="toc-title">Содержание</h2>
+    <nav class="toc-nav" aria-label="Оглавление резюме">
+      <ul id="toc-list">
+        <li><a href="#experience">Опыт работы</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a href="#education">Образование</a></li>
+        <li><a href="#certificates">Сертификаты</a></li>
+        <li><a href="#languages">Языки</a></li>
+      </ul>
+    </nav>
+    <a href="/contact/" class="btn btn-primary" style="margin-top:2rem;width:100%;justify-content:center;">
+      Связаться со мной
+    </a>
+  </aside>
+
+  <!-- Основной контент -->
+  <div class="resume-body">
+    {{ content }}
+  </div>
+</div>
+
+<style>
+  .wrapper--two-col {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  @media (max-width: 1024px) {
+    .wrapper--two-col { grid-template-columns: 1fr; }
+    .toc-sidebar { position: static; margin-bottom: 2rem; }
+  }
+  .toc-sidebar {
+    position: sticky;
+    top: calc(var(--header-h, 64px) + 1.5rem);
+    height: fit-content;
+  }
+  .toc-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    margin: 0 0 1rem;
+    font-weight: 600;
+  }
+  .toc-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .toc-nav a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.15s, background 0.15s;
+  }
+  .toc-nav a:hover,
+  .toc-nav a.active {
+    color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 8%, transparent);
+  }
+  .resume-body { max-width: 720px; }
+  /* Якоря-пустышки для плавной прокрутки */
+  .anchor-target {
+    display: block;
+    position: relative;
+    top: calc(-1 * var(--header-h, 64px) - 1.5rem);
+    visibility: hidden;
+  }
+</style>
+
+<script>
+(function(){
+  // Автогенерация ID у h2 на основе текста заголовка
+  const resumeBody = document.querySelector('.resume-body');
+  if (!resumeBody) return;
+
+  const headings = resumeBody.querySelectorAll('h2');
+  const headingMap = {
+    'Опыт работы': 'experience',
+    'Навыки': 'skills',
+    'Образование': 'education',
+    'Сертификаты': 'certificates',
+    'Языки': 'languages'
+  };
+
+  headings.forEach(function(h2) {
+    const key = h2.textContent.trim();
+    const id = headingMap[key] || key.toLowerCase().replace(/\s+/g, '-').replace(/[^a-zа-яё0-9\-]/gi, '');
+    h2.id = id;
+    // Вставляем невидимый якорь перед заголовком
+    const spacer = document.createElement('span');
+    spacer.className = 'anchor-target';
+    spacer.id = id + '-anchor';
+    h2.parentNode.insertBefore(spacer, h2);
+  });
+
+  // Подсветка активного пункта при скролле
+  const links = document.querySelectorAll('.toc-nav a');
+  function updateActive() {
+    let current = '';
+    links.forEach(function(l) {
+      const targetId = l.getAttribute('href').slice(1);
+      const el = document.getElementById(targetId);
+      if (el && el.getBoundingClientRect().top <= 120) {
+        current = '#' + targetId;
+      }
+    });
+    links.forEach(function(l) {
+      l.classList.toggle('active', l.getAttribute('href') === current);
+    });
+  }
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+})();
+</script>

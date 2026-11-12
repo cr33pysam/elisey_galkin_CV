@@ -1,40 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="{{ site.lang }}">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {% include head.html %}
 </head>
 <body>
-  <header class="header">
-    <nav class="nav container">
-      <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
-      <div class="nav-links">
-        <a href="{{ '/about/' | relative_url }}">Обо мне</a>
-        <a href="{{ '/resume/' | relative_url }}">Резюме</a>
-        <a href="{{ '/index/#cases-section' | relative_url }}">Кейсы</a>
-        <button id="theme-toggle" class="btn-theme" aria-label="Переключить тему">
-          <span class="icon-sun" aria-hidden="true"></span>
-          <span class="icon-moon" aria-hidden="true"></span>
-        </button>
-      </div>
-    </nav>
-  </header>
+  <!-- Skip-link для доступности -->
+  <a href="#main" class="skip-link">Перейти к содержимому</a>
 
-  <main class="container">
+  {% include header.html %}
+
+  <main id="main" role="main">
     {{ content }}
   </main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. Сделано с ❤️ на GitHub Pages.</p>
-    </div>
-  </footer>
+  {% include footer.html %}
 
-  <script src="{{ '/assets/script.js' | relative_url }}"></script>
+  <script src="{{ "/assets/js/main.js" | relative_url }}" defer></script>
 </body>
 </html>

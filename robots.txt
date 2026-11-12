@@ -1,0 +1,5 @@
+# robots.txt — разрешение на индексацию для GitHub Pages
+User-agent: *
+Allow: /
+
+Sitemap: https://alekseygalkin.github.io/sitemap.xml
