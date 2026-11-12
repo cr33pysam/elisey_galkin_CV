@@ -56,7 +56,9 @@ kramdown:
 sass:
   style: compressed          # minify CSS
 
-# ---------- Экспорт -----------------------------------------
+# ---------- Исключения --------------------------------------
+# vendor — содержит шаблоны Jekyll (welcome-to-jekyll), которые
+# не должны обрабатываться как контент сайта
 exclude:
   - README.md
   - Gemfile
@@ -64,10 +66,7 @@ exclude:
   - .git
   - .github
   - node_modules
-
-keep_files:
-  - .git
-  - .github
+  - vendor
 
 encoding: utf-8
 line_endings: unix
