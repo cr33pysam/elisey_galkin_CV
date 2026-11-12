@@ -1,39 +1,39 @@
 # ============================================================
-# Jekyll-конфигурация для сайта-визитки
+# Jekyll-конфигурация для сайта-визитки Елисея Галкина
 # Все настройки для GitHub Pages (static only, no plugins)
 # ============================================================
 
-title: "Алексей Галкин"
-description: "Портфолио — разработчик, дизайнер, исследователь"
+title: "Елисей Галкин"
+description: "Project Manager в EdTech — системное управление командами и ИИ-автоматизации"
 baseurl: "/elisey_galkin_CV"   # имя репозитория — добавляется ко всем ссылкам
-url: "https://cr33pysam.github.io"   # домен сайта (без пути репозитория)
+url: "https://cr33pysam.github.io"
 lang: "ru"
 
 # Автор / владелец сайта
 author:
-  name: "Алексей Галкин"
-  email: "alexey@galkin.dev"
-  twitter: "galkin_dev"
-  github: "galkin-dev"
+  name: "Елисей Галкин"
+  email: "elisey.galkin@proton.me"
+  twitter: "cr33pysam"
+  github: "cr33pysam"
 
 # Соцсети (ссылки для футера)
 social:
-  github: "https://github.com/galkin-dev"
-  telegram: "https://t.me/galkin_dev"
-  linkedin: "https://linkedin.com/in/galkin-dev"
-  twitter: "https://twitter.com/galkin_dev"
+  github: "https://github.com/cr33pysam"
+  telegram: "https://t.me/cr33pysam"
+  linkedin: "https://linkedin.com/in/elisey-galkin"
+
 # Акцентный цвет — приглушённый терракотовый (#C0564A).
 # Для синего замените на #2563EB.
 accent_color: "#C0564A"
 
 # Логотип (текстовый или SVG в asset)
-logo_text: "AG"
+logo_text: "ЕГ"
 
 # Ключевые слова для SEO
-keywords: "портфолио, разработка, дизайн, кейсы"
+keywords: "project manager, edtech, продукт-менеджмент, Asana, Notion, Python, Agile"
 
 # Время публикации (timezone)
-timezone: Europe/Moscow
+timezone: Asia/Novosibirsk
 
 # ---- COLLECTIONS: кейсы -----------------------------------
 collections:
@@ -41,22 +41,15 @@ collections:
     output: true
     permalink: /cases/:path/
 
-# ---- Плагин: sitemap (через жёсткий список, т.к. gh-pages
-#       не всегда поддерживает все плагины — используем
-#       ручной генератор через liquid) ------------------------
 plugins: []
 
 # Компрессия и оптимизация
 markdown: kramdown
-# GFM (таблицы, зачёркивание и т.д.) поддерживается kramdown на GitHub Pages
-# по умолчанию, отдельный парсер не требуется.
-
+# GFM поддерживается kramdown на GitHub Pages по умолчанию
 sass:
-  style: compressed          # minify CSS
+  style: compressed
 
 # ---------- Исключения --------------------------------------
-# vendor — содержит шаблоны Jekyll (welcome-to-jekyll), которые
-# не должны обрабатываться как контент сайта
 exclude:
   - README.md
   - Gemfile

@@ -1,24 +1,24 @@
----
 # ============================================================
-# Главная страница сайта
+# Главная страница — hero + карточки разделов
 # ============================================================
 layout: page
 title: "Главная"
 permalink: /
-excerpt: "Привет! Я — Алексей Галкин, разработчик и дизайнер."
+excerpt: "Project Manager в EdTech — системное управление кросс-функциональными командами и внедрение ИИ-автоматизаций."
 ---
 
 <section class="hero">
-  <span class="hero-label">Разработчик · Дизайнер · Исследователь</span>
-  <h1>Создаю цифровые продукты, которые работают</h1>
+  <span class="hero-label">Project Manager · EdTech · Продукт-развитие</span>
+  <h1>Управляю продуктами, которые меняют опыт обучения</h1>
   <p>
-    Привет! Меня зовут Алексей. Я проектирую интерфейсы и пишу код, 
-    который решает реальные задачи. Люблю чистый дизайн, 
-    производительные системы и истории о том, как это выглядит внутри.
+    Привет! Меня зовут Елисей. Я Project Manager с опытом управления 
+    кросс-функциональными командами в EdTech и IT-стартапах. Внедряю 
+    ИИ-инструменты для автоматизации рутины, выстраиваю прозрачные процессы 
+    и перевожу стратегические цели в системные действия.
   </p>
   <div class="hero-links">
     <a href="{{ '/cases/' | relative_url }}" class="btn btn-primary">Смотреть кейсы</a>
-    <a href="{{ '/contact/' | relative_url }}" class="btn btn-secondary">Связаться со мной</a>
+    <a href="{{ '/resume/' | relative_url }}" class="btn btn-secondary">Резюме</a>
   </div>
 </section>
 
@@ -28,7 +28,6 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
     <div class="section-cards">
       <a href="{{ '/about/' | relative_url }}" class="card">
         <div class="card-icon">
-          <!-- SVG: user -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
@@ -36,11 +35,10 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
           </svg>
         </div>
         <h3>Обо мне</h3>
-        <p>Мой путь в IT, ценности и подход к работе</p>
+        <p>Мой путь, ценности и подход к управлению проектами</p>
       </a>
       <a href="{{ '/cases/' | relative_url }}" class="card">
         <div class="card-icon">
-          <!-- SVG: briefcase -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
@@ -52,7 +50,6 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
       </a>
       <a href="{{ '/resume/' | relative_url }}" class="card">
         <div class="card-icon">
-          <!-- SVG: file-text -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -63,11 +60,10 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
           </svg>
         </div>
         <h3>Резюме</h3>
-        <p>Опыт, образование, навыки и инструменты</p>
+        <p>Полный опыт работы, навыки и сертификаты</p>
       </a>
       <a href="{{ '/contact/' | relative_url }}" class="card">
         <div class="card-icon">
-          <!-- SVG: mail -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
@@ -75,7 +71,7 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
           </svg>
         </div>
         <h3>Контакты</h3>
-        <p>Я всегда открыт к новым проектам и предложениям</p>
+        <p>Связаться со мной — Telegram, email, LinkedIn</p>
       </a>
     </div>
   </nav>

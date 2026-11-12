@@ -1,8 +1,4 @@
 ---
-# ============================================================
-# Страница контактов — только контактная информация
-# Форма удалена: она требовала настройки внешнего сервиса (Formspree)
-# ============================================================
 layout: page
 title: "Контакты"
 permalink: /contact/
@@ -18,19 +14,19 @@ permalink: /contact/
   <ul class="contact-list">
     <li>
       <span class="label">Email</span>
-      <a href="mailto:alexey@galkin.dev">alexey@galkin.dev</a>
+      <a href="mailto:elisey.galkin@proton.me">elisey.galkin@proton.me</a>
     </li>
     <li>
       <span class="label">Telegram</span>
-      <a href="https://t.me/galkin_dev">@galkin_dev</a>
+      <a href="https://t.me/cr33pysam">@cr33pysam</a>
     </li>
     <li>
       <span class="label">GitHub</span>
-      <a href="https://github.com/galkin-dev">github.com/galkin-dev</a>
+      <a href="https://github.com/cr33pysam">github.com/cr33pysam</a>
     </li>
     <li>
       <span class="label">LinkedIn</span>
-      <a href="https://linkedin.com/in/galkin-dev">linkedin.com/in/galkin-dev</a>
+      <a href="https://linkedin.com/in/elisey-galkin">linkedin.com/in/elisey-galkin</a>
     </li>
   </ul>
 
