@@ -14,14 +14,12 @@ title: Главная
   </nav>
 </section>
 
-<section class="cases-section">
+<section class="cases-section" id="cases-section">
   <h2>Мои кейсы</h2>
   <ul class="case-list">
-    {% for case in site.cases %}
-      <li>
-        <a href="{{ case.url | relative_url }}">{{ case.title }}</a>
-        <span class="case-date">{{ case.date | date: '%d.%m.%Y' }}</span>
-      </li>
-    {% endfor %}
+    <li>
+      <a href="{{ '/cases/my-first-case/' | relative_url }}">Интернет-магазин «Свежесть»</a>
+      <span class="case-date">15.03.2024</span>
+    </li>
   </ul>
 </section>
