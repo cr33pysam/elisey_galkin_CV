@@ -49,9 +49,8 @@ plugins: []
 
 # Компрессия и оптимизация
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: false   # без внешних зависимостей
+# GFM (таблицы, зачёркивание и т.д.) поддерживается kramdown на GitHub Pages
+# по умолчанию, отдельный парсер не требуется.
 
 sass:
   style: compressed          # minify CSS
