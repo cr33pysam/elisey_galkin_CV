@@ -1,8 +1,20 @@
+# Build artifacts
 _site/
+
+# Ruby/Gem
+.gitignore
+.ruby-version
+Gemfile
+Gemfile.lock
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
 vendor/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Editor
 *.swp
 *~

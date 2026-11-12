@@ -1,40 +1,35 @@
-name: Galkin Portfolio
-description: >
-  Personal portfolio and CV — built with Jekyll & GitHub Pages
-baseurl: ""
-url: ""
+# ═══════════════════════════════════════════
+#  Galkin Portfolio — GitHub Pages config
+# ═══════════════════════════════════════════
 
-# Collections
+title: Galkin Portfolio
+description: Designer & developer portfolio
+
+# ── URL ───────────────────────────────────────
+# Для username.github.io → url: https://username.github.io  baseurl: ""
+# Для обычного репо     → url: ""                        baseurl: "/repo-name"
+url: ""
+baseurl: "/elisey_galkin_CV"
+
+# Markdown renderer (GitHub Pages стандарт)
+markdown: kramdown
+
+# ── Collections ───────────────────────────────
+# Кейсы лежат в _cases/ → доступны на /cases/:name/
 collections:
   cases:
     output: true
     permalink: /cases/:name/
 
-# Default layout for all pages
+# Дефолтный layout для всех .md страниц
 defaults:
   - scope:
       path: ""
       type: "pages"
     values:
-      layout: "default"
+      layout: default
   - scope:
       path: "_cases"
       type: "files"
     values:
-      layout: "case"
-
-# Build settings
-exclude:
-  - README.md
-  - README.txt
-  - node_modules
-  - .gitignore
-  - .jekyll-cache
-
-# Plugins
-plugins:
-  - jekyll-feed
-
-# Feed settings
-feed:
-  path: feed.xml
+      layout: default

@@ -1,5 +1,4 @@
 ---
-# Placeholder content for Resume page — edit this file!
 layout: default
 title: Resume
 permalink: /resume/
@@ -7,53 +6,50 @@ permalink: /resume/
 
 <div class="container container--narrow">
   <p class="page-eyebrow">Резюме</p>
-  <h1 class="page-title">{{ page.title }}</h1>
+  <h1 class="page-title">Резюме</h1>
+  <div class="prose">
 
-  <div class="prose prose--lg">
-
-    <div style="display: flex; flex-wrap: wrap; gap: 24px; margin-bottom: 40px;">
-      <div>
-        <p style="font-size: 13px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px;">Телефон</p>
-        <p style="font-weight: 500;">+7 (999) 123-45-67</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-label">Телефон</div>
+        <div class="contact-value">+7 (999) 123-45-67</div>
       </div>
-      <div>
-        <p style="font-size: 13px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px;">Email</p>
-        <p style="font-weight: 500;"><a href="mailto:hello@example.com">hello@example.com</a></p>
+      <div class="contact-item">
+        <div class="contact-label">Email</div>
+        <div class="contact-value"><a href="mailto:hello@example.com">hello@example.com</a></div>
       </div>
-      <div>
-        <p style="font-size: 13px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px;">Локация</p>
-        <p style="font-weight: 500;">Москва, Россия</p>
+      <div class="contact-item">
+        <div class="contact-label">Локация</div>
+        <div class="contact-value">Москва, Россия</div>
       </div>
-      <div>
-        <p style="font-size: 13px; color: var(--text-3); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px;">GitHub</p>
-        <p style="font-weight: 500;"><a href="https://github.com/" target="_blank" rel="noopener">github.com/username</a></p>
+      <div class="contact-item">
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value"><a href="https://github.com/" target="_blank" rel="noopener">github.com/username</a></div>
       </div>
     </div>
 
     <hr>
 
     <h2>Опыт работы</h2>
-
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-item__title">Senior Product Designer</div>
-        <div class="timeline-item__company">Финтех-стартап «Alpha»</div>
-        <div class="timeline-item__date">Январь 2022 — настоящее время</div>
-        <div class="timeline-item__desc">
+        <div class="timeline-title">Senior Product Designer</div>
+        <div class="timeline-company">Финтех-стартап «Alpha»</div>
+        <div class="timeline-date">Январь 2022 — настоящее время</div>
+        <div class="timeline-desc">
           <ul>
             <li>Спроектировал полный редизайн мобильного приложения (iOS + Android)</li>
             <li>Создал и документировал дизайн-систему из 120+ компонентов</li>
             <li>Увеличил конверсию оформления счёта с 3.2% до 8.7%</li>
-            <li>Руковожу командой из 3 дизайнеров, проводжу код-ревью и менторство</li>
+            <li>Руковожу командой из 3 дизайнеров</li>
           </ul>
         </div>
       </div>
-
       <div class="timeline-item">
-        <div class="timeline-item__title">UI/UX Designer</div>
-        <div class="timeline-item__company">Digital Studio «Beta」</div>
-        <div class="timeline-item__date">Март 2019 — Декабрь 2021</div>
-        <div class="timeline-item__desc">
+        <div class="timeline-title">UI/UX Designer</div>
+        <div class="timeline-company">Digital Studio «Beta»</div>
+        <div class="timeline-date">Март 2019 — Декабрь 2021</div>
+        <div class="timeline-desc">
           <ul>
             <li>30+ проектов для клиентов из e-commerce, EdTech, healthtech</li>
             <li>Провёл 100+ пользовательских тестирований</li>
@@ -61,33 +57,28 @@ permalink: /resume/
           </ul>
         </div>
       </div>
-
       <div class="timeline-item">
-        <div class="timeline-item__title">Frontend Developer</div>
-        <div class="timeline-item__company">Freelance</div>
-        <div class="timeline-item__date">Июнь 2017 — Февраль 2019</div>
-        <div class="timeline-item__desc">
-          Лендинги, корпоративные сайты, интеграции с CRM. Стек: HTML/CSS/JS, Jekyll, WordPress.
-        </div>
+        <div class="timeline-title">Frontend Developer</div>
+        <div class="timeline-company">Freelance</div>
+        <div class="timeline-date">Июнь 2017 — Февраль 2019</div>
+        <div class="timeline-desc">Лендинги, корпоративные сайты, интеграции с CRM. Стек: HTML/CSS/JS, Jekyll, WordPress.</div>
       </div>
     </div>
 
     <hr>
 
     <h2>Образование</h2>
-
     <div class="timeline">
       <div class="timeline-item">
-        <div class="timeline-item__title">Бакалавр, Дизайнер среды</div>
-        <div class="timeline-item__company">МАРХИ</div>
-        <div class="timeline-item__date">2013 — 2017</div>
+        <div class="timeline-title">Бакалавр, Дизайнер среды</div>
+        <div class="timeline-company">МАРХИ</div>
+        <div class="timeline-date">2013 — 2017</div>
       </div>
     </div>
 
     <hr>
 
     <h2>Навыки</h2>
-
     <h3>Дизайн</h3>
     <div class="skills">
       <span class="skill-tag">Figma</span>
@@ -99,7 +90,6 @@ permalink: /resume/
       <span class="skill-tag">User Research</span>
       <span class="skill-tag">Prototyping</span>
     </div>
-
     <h3>Разработка</h3>
     <div class="skills">
       <span class="skill-tag">HTML5 / CSS3</span>
@@ -117,21 +107,10 @@ permalink: /resume/
 
     <h2>Языки</h2>
     <table>
-      <thead>
-        <tr>
-          <th>Язык</th>
-          <th>Уровень</th>
-        </tr>
-      </thead>
+      <thead><tr><th>Язык</th><th>Уровень</th></tr></thead>
       <tbody>
-        <tr>
-          <td>Русский</td>
-          <td>Родной</td>
-        </tr>
-        <tr>
-          <td>English</td>
-          <td>B2 — Upper Intermediate</td>
-        </tr>
+        <tr><td>Русский</td><td>Родной</td></tr>
+        <tr><td>English</td><td>B2 — Upper Intermediate</td></tr>
       </tbody>
     </table>
 
