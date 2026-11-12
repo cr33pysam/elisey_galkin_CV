@@ -1,7 +1,7 @@
 # Site settings
 title: CV | Иванов Иван
 description: Сайт-визитка — Frontend-разработчик
-baseurl: "/Galkin_CV"
+baseurl: "/elisey_galkin_CV"
 url: ""
 
 # Build settings
