@@ -17,8 +17,8 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
     производительные системы и истории о том, как это выглядит внутри.
   </p>
   <div class="hero-links">
-    <a href="/cases/" class="btn btn-primary">Смотреть кейсы</a>
-    <a href="/contact/" class="btn btn-secondary">Связаться со мной</a>
+    <a href="{{ '/cases/' | relative_url }}" class="btn btn-primary">Смотреть кейсы</a>
+    <a href="{{ '/contact/' | relative_url }}" class="btn btn-secondary">Связаться со мной</a>
   </div>
 </section>
 
@@ -26,7 +26,7 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
   <nav aria-label="Основные разделы">
     <p class="section-title">Разделы</p>
     <div class="section-cards">
-      <a href="/about/" class="card">
+      <a href="{{ '/about/' | relative_url }}" class="card">
         <div class="card-icon">
           <!-- SVG: user -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -38,7 +38,7 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
         <h3>Обо мне</h3>
         <p>Мой путь в IT, ценности и подход к работе</p>
       </a>
-      <a href="/cases/" class="card">
+      <a href="{{ '/cases/' | relative_url }}" class="card">
         <div class="card-icon">
           <!-- SVG: briefcase -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -50,7 +50,7 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
         <h3>Кейсы</h3>
         <p>Проекты с описанием задачи, процесса и результата</p>
       </a>
-      <a href="/resume/" class="card">
+      <a href="{{ '/resume/' | relative_url }}" class="card">
         <div class="card-icon">
           <!-- SVG: file-text -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -65,7 +65,7 @@ excerpt: "Привет! Я — Алексей Галкин, разработчи
         <h3>Резюме</h3>
         <p>Опыт, образование, навыки и инструменты</p>
       </a>
-      <a href="/contact/" class="card">
+      <a href="{{ '/contact/' | relative_url }}" class="card">
         <div class="card-icon">
           <!-- SVG: mail -->
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"

@@ -4,15 +4,15 @@
 <header class="site-header" role="banner">
   <div class="header-inner">
     <!-- Логотип -->
-    <a href="/" class="logo" aria-label="На главную">{{ site.logo_text }}</a>
+    <a href="{{ '/' | relative_url }}" class="logo" aria-label="На главную">{{ site.logo_text }}</a>
 
     <!-- Десктопная навигация -->
     <nav aria-label="Основная навигация">
       <ul class="nav-links">
-        <li><a href="/about/">Обо мне</a></li>
-        <li><a href="/cases/">Кейсы</a></li>
-        <li><a href="/resume/">Резюме</a></li>
-        <li><a href="/contact/">Контакты</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">Обо мне</a></li>
+        <li><a href="{{ '/cases/' | relative_url }}">Кейсы</a></li>
+        <li><a href="{{ '/resume/' | relative_url }}">Резюме</a></li>
+        <li><a href="{{ '/contact/' | relative_url }}">Контакты</a></li>
         <!-- Переключатель темы -->
         <li>
           <button class="theme-toggle" id="themeToggle"
@@ -57,10 +57,10 @@
 
 <!-- Мобильное оверлей-меню -->
 <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Мобильное меню">
-  <a href="/about/">Обо мне</a>
-  <a href="/cases/">Кейсы</a>
-  <a href="/resume/">Резюме</a>
-  <a href="/contact/">Контакты</a>
+  <a href="{{ '/about/' | relative_url }}">Обо мне</a>
+  <a href="{{ '/cases/' | relative_url }}">Кейсы</a>
+  <a href="{{ '/resume/' | relative_url }}">Резюме</a>
+  <a href="{{ '/contact/' | relative_url }}">Контакты</a>
   <button class="theme-toggle" id="mobileThemeToggle"
           aria-label="Переключить тему" style="margin-top:1rem;">
     <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg"

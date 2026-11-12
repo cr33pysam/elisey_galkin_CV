@@ -5,8 +5,8 @@
 
 title: "Алексей Галкин"
 description: "Портфолио — разработчик, дизайнер, исследователь"
-baseurl: ""          # пустой, если корень домена (user.github.io)
-url: "https://alekseygalkin.github.io"   # измените на ваш домен/репозиторий
+baseurl: "/elisey_galkin_CV"   # имя репозитория — добавляется ко всем ссылкам
+url: "https://cr33pysam.github.io"   # домен сайта (без пути репозитория)
 lang: "ru"
 
 # Автор / владелец сайта
@@ -22,7 +22,6 @@ social:
   telegram: "https://t.me/galkin_dev"
   linkedin: "https://linkedin.com/in/galkin-dev"
   twitter: "https://twitter.com/galkin_dev"
-
 # Акцентный цвет — приглушённый терракотовый (#C0564A).
 # Для синего замените на #2563EB.
 accent_color: "#C0564A"
