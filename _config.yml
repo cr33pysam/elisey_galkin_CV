@@ -1,35 +1,12 @@
-# ═══════════════════════════════════════════
-#  Galkin Portfolio — GitHub Pages config
-# ═══════════════════════════════════════════
-
-title: Galkin Portfolio
-description: Designer & developer portfolio
-
-# ── URL ───────────────────────────────────────
-# Для username.github.io → url: https://username.github.io  baseurl: ""
-# Для обычного репо     → url: ""                        baseurl: "/repo-name"
+# Site settings
+title: CV | Иванов Иван
+description: Сайт-визитка — Frontend-разработчик
+baseurl: "/Galkin_CV"
 url: ""
-baseurl: "/elisey_galkin_CV"
 
-# Markdown renderer (GitHub Pages стандарт)
+# Build settings
 markdown: kramdown
+highlighter: rouge
 
-# ── Collections ───────────────────────────────
-# Кейсы лежат в _cases/ → доступны на /cases/:name/
-collections:
-  cases:
-    output: true
-    permalink: /cases/:name/
-
-# Дефолтный layout для всех .md страниц
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: default
-  - scope:
-      path: "_cases"
-      type: "files"
-    values:
-      layout: default
+# Google Fonts (подключается в _includes/head.html)
+google_font: "Inter:wght@400;500;600;700"
