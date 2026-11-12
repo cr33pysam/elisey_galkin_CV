@@ -13,10 +13,15 @@
   <header class="header">
     <nav class="nav container">
       <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
-      <button id="theme-toggle" class="btn-theme" aria-label="Переключить тему">
-        <span class="icon-sun" aria-hidden="true"></span>
-        <span class="icon-moon" aria-hidden="true"></span>
-      </button>
+      <div class="nav-links">
+        <a href="{{ '/about/' | relative_url }}">Обо мне</a>
+        <a href="{{ '/resume/' | relative_url }}">Резюме</a>
+        <a href="{{ '/cases/' | relative_url }}">Кейсы</a>
+        <button id="theme-toggle" class="btn-theme" aria-label="Переключить тему">
+          <span class="icon-sun" aria-hidden="true"></span>
+          <span class="icon-moon" aria-hidden="true"></span>
+        </button>
+      </div>
     </nav>
   </header>
 

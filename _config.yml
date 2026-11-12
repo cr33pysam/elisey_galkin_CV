@@ -8,5 +8,10 @@ url: ""
 markdown: kramdown
 highlighter: rouge
 
+# Collection: кейсы
+collections:
+  cases:
+    output: true
+
 # Google Fonts (подключается в _includes/head.html)
 google_font: "Inter:wght@400;500;600;700"

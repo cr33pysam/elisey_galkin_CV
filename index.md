@@ -17,12 +17,11 @@ title: Главная
 <section class="cases-section">
   <h2>Мои кейсы</h2>
   <ul class="case-list">
-    {% for case in site.static_files %}
-      {% if case.path contains '/cases/' and case.extname == '.md' %}
-        <li>
-          <a href="{{ case.path | relative_url }}">{{ case.name | replace: '.md', '' }}</a>
-        </li>
-      {% endif %}
+    {% for case in site.cases %}
+      <li>
+        <a href="{{ case.url | relative_url }}">{{ case.title }}</a>
+        <span class="case-date">{{ case.date | date: '%d.%m.%Y' }}</span>
+      </li>
     {% endfor %}
   </ul>
 </section>

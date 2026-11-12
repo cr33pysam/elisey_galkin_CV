@@ -76,6 +76,20 @@ a:hover { color: var(--accent-hover); }
 }
 .logo:hover { color: var(--accent); }
 
+/* Nav links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--accent); }
+
 /* Theme toggle */
 .btn-theme {
   background: none;
