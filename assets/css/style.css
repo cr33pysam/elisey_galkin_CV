@@ -89,6 +89,15 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
 }
+.hero-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border: 3px solid var(--accent);
+  background: var(--surface);
+}
 
 /* ===== КАРТОЧКИ РАЗДЕЛОВ ===== */
 .section-cards {

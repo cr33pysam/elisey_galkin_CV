@@ -4,6 +4,14 @@ title: "Резюме"
 permalink: /resume/
 ---
 
+<div class="resume-header">
+  <img src="{{ '/assets/img/avatar-placeholder.svg' | relative_url }}" alt="" width="96" height="96" loading="lazy" class="resume-avatar">
+  <div class="resume-header-text">
+    <h1>Елисей Галкин</h1>
+    <p class="resume-subtitle">Project Manager · EdTech · Продукт-развитие</p>
+  </div>
+</div>
+
 ## Опыт работы
 
 ### Project Manager — documentat.io
