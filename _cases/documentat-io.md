@@ -4,7 +4,7 @@ title: "Управление продуктом в documentat.io"
 subtitle: "Как мы ускорили обработку запросов в 5 раз и сократили рутину с 1,5 часа до 20 минут"
 date: 2026-11-01
 tags: [Project Management, EdTech, AI, SDLC, аутстафф]
-cover: ""
+cover: "documentat_case.jpg"
 ---
 
 ## Контекст

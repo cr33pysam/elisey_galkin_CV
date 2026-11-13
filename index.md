@@ -6,7 +6,7 @@ excerpt: "Project Manager в EdTech — системное управление 
 ---
 
 <section class="hero">
-  <img src="{{ '/assets/img/avatar-placeholder.svg' | relative_url }}" alt="" width="80" height="80" loading="lazy" class="hero-avatar">
+  <img src="{{ '/assets/img/avatar.jpg' | relative_url }}" alt="Фото Елисея Галкина" width="80" height="80" loading="lazy" class="hero-avatar">
   <span class="hero-label">Project Manager · EdTech · Продукт-развитие</span>
   <h1>Управляю продуктами, которые меняют опыт обучения</h1>
   <p>
