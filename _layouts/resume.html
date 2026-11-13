@@ -39,12 +39,14 @@ layout: default
   }
   @media (max-width: 1024px) {
     .wrapper--two-col { grid-template-columns: 1fr; }
-    .toc-sidebar { position: static; margin-bottom: 2rem; }
   }
   .toc-sidebar {
     position: sticky;
     top: calc(var(--header-h, 64px) + 1.5rem);
     height: fit-content;
+  }
+  @media (max-width: 1024px) {
+    .toc-sidebar { position: static; margin-bottom: 2rem; }
   }
   .toc-title {
     font-size: 0.75rem;
