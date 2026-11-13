@@ -24,10 +24,6 @@ permalink: /contact/
       <span class="label">GitHub</span>
       <a href="https://github.com/cr33pysam">github.com/cr33pysam</a>
     </li>
-    <li>
-      <span class="label">LinkedIn</span>
-      <a href="https://linkedin.com/in/elisey-galkin">linkedin.com/in/elisey-galkin</a>
-    </li>
   </ul>
 
   <p class="meta-note">
