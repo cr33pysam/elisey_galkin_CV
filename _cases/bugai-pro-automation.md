@@ -4,7 +4,7 @@ title: "Автоматизация процессов в BUGAI.PRO"
 subtitle: "База знаний, AI-бот для таймшитов и 3 чек-листа для 24 съёмок в год"
 date: 2026-03-15
 tags: [Project Administration, AI, Python, Asana, контент-производство]
-cover: ""
+# cover: ""
 ---
 
 ## Контекст
